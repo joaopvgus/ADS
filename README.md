@@ -9,3 +9,4 @@
 # 6. na pasta onde você fez a cópia do repositório, ainda através do CMD ou terminal, entre na pasta ADS, e digite "code ."(sem áspas) e o VSCode deve abrir.
 # 7. para atualizar os arquivos na sua máquina, basta, no VSCode, na barra lateral esquerda, entrar no menu onde onde há três circulos conectados, e na parte de cima, clicar na seta circular.
 # teste
+# teste3

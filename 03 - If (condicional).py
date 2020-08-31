@@ -73,5 +73,16 @@ elif (opcao == '2'):
 else:
     print('Por favor, escolha uma opção válida')
     
-## pronto, entendemos qual é a estrutura e a funcionalidade do if,
-## e portanto proponho um exercício, que é nosso arquivo número 04
+## tem mais um recurso interessante para vermos, que são os operadores
+## lógicos E e OU, em Python, and e or
+
+## se colocamos por exemplo:
+
+if (5 > 2) and (10 < 4):
+    print('oiê')
+
+## simplesmente não teremos o interior do If executado, pois 5 > 2 é True, mas 10 < 4 é False
+## e o If só executa o que está em seu corpo se o resultado geral for um True, o que não é 
+## o caso. O or designa que ao menos uma daquelas funções deve ser True.
+
+## um if pode ser posto dentre de outro, não há nenhum problema.

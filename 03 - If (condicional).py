@@ -35,4 +35,43 @@ if (5 > 2):
 
 ## a história muda se nós tivermos na condição, variáveis, porque
 ## a próxima ação do computador irá depender da escolha do usuário,
-## de repente
+## de repente. Por exemplo, se queremos que o nosso usuário escolha
+## se vai fazer uma soma ou subtração, podemos fazer assim:
+
+opcao = input('Você quer fazer uma soma ou uma subtração?\n\n1 - soma \n2 - subtração\n\n')
+
+## o '\n' serve para pular uma linha
+
+if (opcao == '1'): ## estamos fazendo a comparação usando áspas porque o resultado do input é sempre texto
+    ## aqui, com um TAB de distância, colocamos o que acontecerá se
+    ## a condição resultar True, ou seja, se o usuário digitar '1', esse
+    ## será o resultado
+    a = int(input('Digite o primeiro número: '))
+    b = int(input('Digite o segundo número: '))
+    resultado = a + b
+    print(resultado)
+    ## mas, o que fazer se essa condição não resultar True, é para
+    ## isso que servem o else e ou elif. O else significa senão, ou
+    ## ou seja, se aquela operação não resultar True, se fará o que
+    ## se especifica no else. E o elif é uma abreviação de else if,
+    ## que significa "senão, se", ou seja, se a condição do início
+    ## do if não resultar True, ele verificará se essa outra condição
+    ## resulta
+    
+    ## mas enfim, se opcao não for igual a '1', temos que ver se é
+    ## igual a '2', portanto, fora do if, escrevemos:
+    
+elif (opcao == '2'):
+    a = int(input('Digite o primeiro número: '))
+    b = int(input('Digite o segundo número: '))
+    resultado = a - b
+    print(resultado)
+    
+    ## porém, e se o usuário escolher nem '1', nem '2', pq ele é
+    ## birrento, temos de ter uma resposta. É aí que entra nosso
+    ## else, nosso senão.
+else:
+    print('Por favor, escolha uma opção válida')
+    
+## pronto, entendemos qual é a estrutura e a funcionalidade do if,
+## e portanto proponho um exercício, que é nosso arquivo número 04

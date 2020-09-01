@@ -42,7 +42,7 @@ print(c)
 ## vamos agora pedir ao usuário que nos dê um valor para trabalharmos, e faremos
 ## isso usando o método input(). E o faremos assim:
 
-entrada = input('Digite aqui um número')
+entrada = int(input('Digite aqui um número'))
 
 ## o que acabamos de fazer? criamos uma
 ## variável 'entrada', e lhe atribuímos o valor dado pelo usuário através do

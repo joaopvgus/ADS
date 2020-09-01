@@ -17,8 +17,12 @@
 
 ## -------- ESCREVA O CÓDIGO AQUI ABAIXO E EXECUTE -----------------
 
+nome = input('Digite o seu primeiro nome: ')
+sobrenome = input('Digite aqui o seu sobrenome: ')
 
+nome_completo = nome + ' ' + sobrenome
 
+print(nome_completo)
 
 
 

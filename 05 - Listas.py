@@ -2,28 +2,29 @@ abc = 'String'
 
 print(abc[-1])
 
-people = ['Jorge', 'Tom', 'Jerry', 'Brutus']
-people[0] = 'Mike'
-print(*people)  # show all the elements inside the list/array
-people.append('Toby')  # add 'Toby' at the end of 'people'
+pessoas = ['Jorge', 'Tom', 'Jerry', 'Brutus']
+pessoas[0] = 'Mike'
+print(*pessoas)  # mostra todos os ementos dentro de pessoas
+pessoas.append('Toby')  # adiciona 'Toby' no final da pessoas
 
-list1 = ['John', 'Leon']
-people.extend(list1)  # add a list at the end of another list
-people.insert(0, 'Ana')  # add 'Ana' in the beginning and push all the other elements
-people.remove('Tom')  # don't really have to explain'
-print(*people)
+lista1 = ['John', 'Leon']
+pessoas.extend(lista1)  # adiciona os elementos de lista1 no final de pessoas
+pessoas.insert(0, 'Ana')  # adiciona "Ana" na posição indicada e empurra pra frente todos os elementos posteriores
+pessoas.remove('Tom')  # remove os elementos que tem o valor "Tom"
+print(*pessoas)
 
-# people.clear() # erase all the elements inside the list
-# people.pop() # erase a random element
-print(people.index('Leon'))  # prints the location of 'Tom'
-print(people.count('Jerry'))  # prints how many 'Jerry's' exist in the list
-people.sort()  # set's the list in alfabetical/crescent order
-people.reverse()  # reverses the order of the list
+# pessoas.clear() # apaga todos os elementos de pessoas
+# pessoas.pop() # se usado assim, apaga o último elemento, se for especificado um número dentro do método, esse 
+# número aponta qual item será apagado, por exemplo: pessoas.pop(0) apaga o elemento de posição 0
+print(pessoas.index('Leon'))  # imprime a localização na lista de 'Leon'
+print(pessoas.count('Jerry'))  # imprime quantos elementos de valor "Jerry" existem na lista
+pessoas.sort()  # organiza a lista em ordem crescente ou alfabética
+pessoas.reverse()  # inverte a ordem dos elementos da lista
 
-people2 = people.copy()
-people2.insert(0, 'Karen')
+pessoas2 = pessoas.copy() # faz uma cópia de todos os elementos de pessoas e as guarda em 
+pessoas2.insert(0, 'Karen') 
 
-print('people = ' + str(people))
-print('people2 = ' + str(people2))
+print('people = ' + str(pessoas))
+print('people2 = ' + str(pessoas2))
 
-coordinates = (1, 2)  # that's a tuple, it's like a list, but it's immutable
+coordinates = (1, 2)  # isso é a forma de se declarar uma 'tuple', que é uma lista imutável
